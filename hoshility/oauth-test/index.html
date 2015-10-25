@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+</head>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+SC.initialize({
+  client_id: '7a5d18cfced2cb96edd5d2faeb02c8bf',
+  redirect_uri: '//callback.html'
+});
+
+// initiate auth popup
+SC.connect().then(function() {
+  return SC.get('/me');
+}).then(function(me) {
+  alert('Hello, ' + me.username);
+});
+</script>
+<body>
+test
+</body>
+</html>
