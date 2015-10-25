@@ -1,0 +1,66 @@
+.track{
+  position: relative;
+  width: 300px;
+  height: 250px;  
+  overflow: hidden;
+  float: left;
+}
+
+.track img.artwork {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -25px;
+}
+
+.track img.controls {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 27px);  
+}
+
+.track img.controls:hover {
+  cursor: pointer;
+}
+
+.track .seekbar {
+  position: absolute;
+  width: 280px;
+  height: 10px;
+  margin: 10px;
+  bottom: 30px;
+  border-radius: 40px;
+  background-color: rgba(216, 216, 216, 0.6);
+  background-image: url("../images/played.png");
+  background-repeat: no-repeat;
+  background-size: 0%;
+}
+
+.track .information {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.track .title,
+.track .username {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 3px 8px;
+}
+
+.track .title {
+  font-size: 90%;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+}
+
+.track .username {
+  font-size: 60%;
+}
+
+
+
